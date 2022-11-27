@@ -31,3 +31,11 @@ print("-------------------------------")
 print("Binance ADX data: ", binanceadx)
 print("-------------------------------")
 print("Bybit ADX data: ", bybitadx)
+
+binancemacd = binancedf.ta.macd()
+bybitmacd = bybitdf.ta.macd()
+
+print("-------------------------------")
+print("Binance MACD data: ", binancemacd)
+print("-------------------------------")
+print("Bybit MACD data: ", bybitmacd)
