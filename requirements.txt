@@ -1,0 +1,8 @@
+pandas
+pandas-ta
+ccxt
+yfinance
+streamlit
+matplotlib
+plotly
+requests
