@@ -20,8 +20,12 @@ print("-------------------------------")
 print("Bybit data: ", bybitdf)
 print("-------------------------------")
 
-binanceadx = ta.adx(binancedf['high'], binancedf['low'], binancedf['close']) #length=10
-bybitadx = ta.adx(bybitdf['high'], bybitdf['low'], bybitdf['close'])
+#binanceadx = ta.adx(binancedf['high'], binancedf['low'], binancedf['close']) #length=10
+#bybitadx = ta.adx(bybitdf['high'], bybitdf['low'], bybitdf['close'])
+#Easier way of doing things below
+
+binanceadx = binancedf.ta.adx()
+bybitadx = bybitdf.ta.adx()
 
 print("-------------------------------")
 print("Binance ADX data: ", binanceadx)
